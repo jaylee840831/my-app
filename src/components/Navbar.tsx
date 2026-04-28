@@ -5,8 +5,8 @@ import Link from 'next/link';
 import ThemeToggle from '@/components/ThemeToggle';
 import { Caveat } from 'next/font/google';
 
-const dancing = Caveat ({
-  subsets: ["latin", "latin-ext", "cyrillic"],
+const caveat = Caveat({
+  subsets: ['latin', 'latin-ext', 'cyrillic'],
   weight: ['400', '700'],
 });
 
@@ -15,7 +15,7 @@ export default function Navbar() {
 
   const navItems = [
     { name: 'About', href: '/about' },
-    { name: 'Projects', href: '/projects' },
+    { name: 'Blog', href: '/blog' },
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -25,7 +25,7 @@ export default function Navbar() {
       <div className="">
         <div className="max-w-6xl mx-auto flex items-center justify-between pl-4 pr-4 pt-2 pb-2">
           {/* 🧭 Logo */}
-          <div className={`text-4xl tracking-wide ${dancing.className}`}>
+          <div className={`text-4xl tracking-wide ${caveat.className}`}>
             <Link href="/">JASPER LI</Link>
           </div>
 
@@ -40,7 +40,7 @@ export default function Navbar() {
           </nav>
 
           {/* 🍔 Mobile button */}
-          <div className='md:hidden flex items-center gap-8'>
+          <div className="md:hidden flex items-center gap-8">
             <ThemeToggle />
             <button className="cursor-pointer text-2xl" onClick={() => setOpen(!open)}>
               ☰
