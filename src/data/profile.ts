@@ -88,8 +88,20 @@ export const profile: Profile = {
   ],
   skill: [
     {
-      title: '',
-      desc: 'Java/Spring Boot、Node.js、Vue.js、Angular、React/Next.js、HTML、Javascript、Typescript、Docker、Git',
+      title: '後端開發',
+      desc: 'Java/Spring Boot、Python、Node.js',
+    },
+    {
+      title: '前端開發',
+      desc: 'Vue.js、Angular、React/Next.js、HTML、Javascript、Typescript',
+    },
+    {
+      title: '版本控制',
+      desc: 'Git',
+    },
+    {
+      title: '容器化管理',
+      desc: 'Docker',
     },
   ],
   introduce:

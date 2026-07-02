@@ -12,6 +12,7 @@ docker rm -f $CONTAINER_NAME 2>/dev/null
 echo "Starting dev container..."
 
 docker run -it \
+  --name $CONTAINER_NAME \
   -p $PORT:3000 \
   -v $(pwd -W):/app \
   -v /app/node_modules \
