@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
@@ -101,7 +102,7 @@ export default function HomeHero() {
           </div>
 
           <div className="mt-6 relative inline-block cursor-pointer group text-blue-500 font-semibold w-full text-end">
-            MORE ABOUT ME
+            <Link href="/about">MORE ABOUT ME</Link>
             <span className="ml-2 inline-flex gap-1 text-lg">
               <span className="arrow">❯</span>
               <span className="arrow">❯</span>

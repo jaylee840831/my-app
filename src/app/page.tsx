@@ -4,7 +4,7 @@ import Reveal from '@/components/Reveal';
 import { profile } from '@/data/profile';
 
 export const metadata = {
-  title: 'Home - 李尹覺(Jasper LI) | 軟體工程師 | FULL-STACK DEVELOPER',
+  title: '李尹覺(Jasper LI) | 軟體工程師 | Software Engineer | FULL-STACK DEVELOPER',
   description: '專業網站開發、系統建置',
 };
 
@@ -46,36 +46,6 @@ export default function Home() {
           </div>
         </Reveal>
       </section>
-
-      {/* WORK */}
-      {/* <section className="relative z-10 w-full max-w-6xl mb-28 mx-auto px-6 items-center">
-        <Reveal>
-          <h2 className="mb-8 tracking-widest">
-            LATEST WORK
-          </h2>
-
-          <div className="relative z-10 pb-24">
-            <div className="grid md:grid-cols-3 gap-8">
-              {profile.work.map((content, index) => (
-                <div key={index} className="hover:scale-[1.02] transition">
-                    <div className="relative w-full h-[250px]">
-                      <Image
-                        src={content.imageUrl}
-                        alt={content.title}
-                        fill
-                        sizes="400px"
-                        loading="eager"
-                        className="object-cover rounded-2xl border"
-                      />
-                    </div>
-                    <h5 className="mt-3 text-blue-500">{content.title}</h5>
-                    <p className="mt-3">{content.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </Reveal>
-      </section> */}
 
       {/* FOOTER CTA */}
       <section className="relative z-10 text-center pb-24 px-6">
